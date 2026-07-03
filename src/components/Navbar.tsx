@@ -43,9 +43,9 @@ export default function Navbar() {
             <a href="#tracking" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               Tracking Console
             </a>
-            <a href="#network" className="text-sm font-medium text-ink hover:text-coral transition-colors">
-              Global Network
-            </a>
+            <Link href="/about" className="text-sm font-medium text-ink hover:text-coral transition-colors">
+              About Us
+            </Link>
             <a href="#quote" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               Request Quote
             </a>
@@ -105,13 +105,13 @@ export default function Navbar() {
                 >
                   Tracking Console
                 </a>
-                <a
-                  href="#network"
+                <Link
+                  href="/about"
                   onClick={toggleMenu}
                   className="block text-base font-medium text-ink hover:text-coral border-b border-hairline/50 pb-2"
                 >
-                  Global Network
-                </a>
+                  About Us
+                </Link>
                 <a
                   href="#quote"
                   onClick={toggleMenu}

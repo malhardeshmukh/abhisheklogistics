@@ -21,7 +21,7 @@ const CAPABILITIES: Capability[] = [
     title: "Precision Road Freight",
     monoLabel: "ROUTE / INLAND",
     description: "Multi-modal trucking networks operating on high-frequency schedules across continental corridors. Dynamic re-routing coordinates supply chain safety.",
-    link: "#quote",
+    link: "/services/road",
     viewBox: "0 0 100 60",
     paths: [
       "M 10 50 Q 30 10, 50 30 T 90 10", // Road route path
@@ -33,7 +33,7 @@ const CAPABILITIES: Capability[] = [
     title: "Expedited Air Cargo",
     monoLabel: "CORRIDOR / GLOBAL",
     description: "Next-flight-out dispatch and priority clearance for time-critical parts, pharma, and high-value cargo. Global hubs connect key economic centers.",
-    link: "#quote",
+    link: "/services/air",
     viewBox: "0 0 100 60",
     paths: [
       "M 10 50 C 30 50, 40 10, 90 10",   // Takeoff flight arc
@@ -45,7 +45,7 @@ const CAPABILITIES: Capability[] = [
     title: "Maritime Freight Shipping",
     monoLabel: "PORT / TRANSIT",
     description: "Full container load (FCL) and consolidated shipments (LCL) serving all major sea ports. Real-time satellite tracking monitors container health.",
-    link: "#quote",
+    link: "/services/ocean",
     viewBox: "0 0 100 60",
     paths: [
       "M 10 30 Q 25 20, 40 30 T 70 30 T 90 30", // Ocean wave
@@ -57,7 +57,7 @@ const CAPABILITIES: Capability[] = [
     title: "Smart Warehousing Systems",
     monoLabel: "FACILITY / STORAGE",
     description: "De-consolidating, picking, and fulfillment nodes operating on micro-fulfillment schedules. Cloud inventory databases provide 100% stock accuracy.",
-    link: "#quote",
+    link: "/services/warehouse",
     viewBox: "0 0 100 60",
     paths: [
       "M 20 15 H 80 V 45 H 20 Z",       // Warehouse box
