@@ -53,3 +53,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #75758a;
 }
+
+@keyframes radiative-pulse {
+  0%, 100% {
+    opacity: 0.75;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.btn-radiative-text {
+  animation: radiative-pulse 2.5s infinite ease-in-out;
+}
+

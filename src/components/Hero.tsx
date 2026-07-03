@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
-import TrackingConsole from "./TrackingConsole";
+import { ArrowRight } from "lucide-react";
+import PortNetworkConsole from "./PortNetworkConsole";
 
 export default function Hero() {
   return (
@@ -24,18 +24,18 @@ export default function Hero() {
           
           {/* Upper Category Label */}
           <span className="font-technical text-sm font-normal text-coral tracking-[0.25em] uppercase mb-6 block select-none">
-            DISPATCH MODULE v4.8.0
+            EXIM & DOMESTIC B2B LOGISTICS
           </span>
           
           {/* Monumental Headline */}
           <h1 className="font-display text-[44px] sm:text-[64px] md:text-[84px] lg:text-[96px] font-normal leading-[0.95] tracking-[-0.035em] text-primary uppercase max-w-3xl mb-8">
             GLOBAL FREIGHT. <br className="hidden sm:inline" />
-            <span className="text-[#a1a1a6]">ENGINEERED FOR</span> PRECISION.
+            <span className="text-[#a1a1a6]">SHIPPED WITH</span> RELIABILITY.
           </h1>
           
           {/* Subtext */}
           <p className="font-body text-base sm:text-lg text-body-muted max-w-xl mb-10 leading-[1.6]">
-            Abhishek Logistics provides a high-reliability command center for ocean, air, and road freight. Complete transit telemetry and zero-latency routing.
+            Abhishek Logistics provides dependable ocean, air, and road logistics. Connecting Indian manufacturers to international markets through customized cargo forwarding and customs clearance solutions.
           </p>
           
           {/* Actions */}
@@ -44,7 +44,7 @@ export default function Hero() {
               href="#quote"
               className="w-full sm:w-auto bg-primary hover:bg-cohere-black text-on-primary font-body text-sm font-medium py-4 px-8 rounded-full shadow-md transition-all duration-150 active:scale-95 text-center flex items-center justify-center gap-2 group"
             >
-              Initiate Corridor Request
+              <span className="btn-radiative-text">Get Freight Quote</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             
@@ -52,7 +52,7 @@ export default function Hero() {
               href="#services"
               className="text-sm font-medium text-ink hover:text-action-blue border-b border-ink/40 hover:border-action-blue transition-all duration-150 py-1"
             >
-              Explore Logistics Matrix
+              Our Logistics Services
             </a>
           </div>
         </div>
@@ -60,21 +60,21 @@ export default function Hero() {
         {/* Two-card composition: Wide console card + narrower image card */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mt-8">
           
-          {/* Card 1 (Wide): Live Telemetry Console (Spans 2 columns) */}
+          {/* Card 1 (Wide): Interactive Port Connectivity Dashboard (Spans 2 columns) */}
           <div className="lg:col-span-2 flex flex-col justify-between">
             <div className="relative group h-full">
               {/* Outer container imitating Cohere's hero-photo-card style with rounded-lg (22px) */}
               <div className="h-full bg-soft-stone rounded-[22px] border border-card-border p-4 sm:p-6 flex flex-col justify-center">
                 <div className="mb-4 flex items-center justify-between">
                   <span className="font-technical text-xs text-slate tracking-[0.1em] uppercase">
-                    SYS.MONITOR // MAIN_FRAME
+                    PORT GATEWAYS // CONNECTIVITY
                   </span>
-                  <div className="flex items-center gap-1.5 text-xs text-ink/60">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    Live Data Link
+                  <div className="flex items-center gap-1.5 text-xs text-ink/60 font-medium">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse" />
+                    Customs Bonded Carrier
                   </div>
                 </div>
-                <TrackingConsole />
+                <PortNetworkConsole />
               </div>
             </div>
           </div>
@@ -84,10 +84,10 @@ export default function Hero() {
             <div className="h-full bg-soft-stone rounded-[22px] border border-card-border p-6 flex flex-col justify-between relative overflow-hidden group">
               <div>
                 <span className="font-technical text-[10px] text-slate tracking-[0.1em] uppercase block mb-4">
-                  FLEET PROFILE // SHIPMENT_02
+                  INTEGRATED EXIM CARGO
                 </span>
                 <h3 className="font-display text-2xl font-normal text-primary mb-4 leading-tight">
-                  Intercontinental Maritime Routes
+                  Export & Import Shipping Solutions
                 </h3>
               </div>
               
@@ -105,11 +105,11 @@ export default function Hero() {
 
               <div>
                 <p className="text-xs text-body-muted leading-[1.5] mb-4">
-                  Our maritime fleet utilizes GPS micro-routing and automated drafts to minimize fuel consumption and transit delay times.
+                  Dedicated customs-bonded logistics linking major industrial corridors and production hubs directly with critical sea lanes.
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="font-technical text-[10px] text-slate">LATENCY: &lt;1.2s</span>
-                  <span className="font-technical text-[10px] text-coral font-bold uppercase">CORRIDOR SECURED</span>
+                  <span className="font-technical text-[10px] text-slate">COMPLIANCE: 100%</span>
+                  <span className="font-technical text-[10px] text-coral font-bold uppercase">CARGO ASSURED</span>
                 </div>
               </div>
             </div>

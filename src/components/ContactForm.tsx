@@ -37,13 +37,13 @@ export default function ContactForm() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="font-technical text-sm font-normal text-coral tracking-[0.2em] uppercase block mb-3">
-            ROUTE PROTOCOL INITIATION
+            GET A FREIGHT QUOTE
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-normal leading-[1.1] tracking-[-0.02em] text-primary">
-            Request Freight Corridor Quote
+            Request Cargo Freight Quote
           </h2>
           <p className="mt-4 text-sm text-body-muted font-body max-w-md mx-auto">
-            Input freight specifications. Abhishek logistics engineers will compile pricing telemetry and capacity schedules within 60 minutes.
+            Input your shipment specifications. Our customs and logistics experts will analyze your requirements and get back to you with custom rates and schedules.
           </p>
         </div>
 
@@ -59,10 +59,10 @@ export default function ContactForm() {
                 <CheckCircle2 className="w-8 h-8" />
               </div>
               <h3 className="font-display text-3xl font-normal text-primary mb-3">
-                Protocol Confirmed
+                Quote Request Received
               </h3>
               <p className="text-base text-body-muted max-w-sm mb-8">
-                Your freight request has been indexed. Telemetry specialists are calculating route capacity. Check your inbox for updates.
+                Thank you for reaching out. A logistics manager is reviewing your cargo specifications and will contact you shortly with rates.
               </p>
               <button
                 onClick={() => {
@@ -81,7 +81,7 @@ export default function ContactForm() {
                 }}
                 className="font-technical text-sm font-medium text-action-blue hover:text-focus-blue transition-colors flex items-center gap-1.5"
               >
-                Submit another manifest <ArrowRight className="w-4 h-4" />
+                Submit another request <ArrowRight className="w-4 h-4" />
               </button>
             </motion.div>
           ) : (
@@ -140,7 +140,7 @@ export default function ContactForm() {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+1 (555) 019-2834"
+                    placeholder="+91 98765 43210"
                     className="w-full bg-canvas border border-hairline focus:border-form-focus focus:ring-2 focus:ring-form-focus/20 outline-none rounded-xs px-4 py-3 text-sm text-ink placeholder-muted/60 transition-all duration-150"
                   />
                 </div>
@@ -150,27 +150,27 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="font-technical text-xs text-slate uppercase tracking-[0.05em] block mb-2">
-                    Origin Corridor / Node
+                    Loading Point / Origin (City or Port)
                   </label>
                   <input
                     type="text"
                     required
                     value={formData.origin}
                     onChange={(e) => setFormData({ ...formData, origin: e.target.value })}
-                    placeholder="e.g. Mumbai IN (BOM)"
+                    placeholder="e.g. Mumbai IN (BOM) or Nhava Sheva"
                     className="w-full bg-canvas border border-hairline focus:border-form-focus focus:ring-2 focus:ring-form-focus/20 outline-none rounded-xs px-4 py-3 text-sm text-ink placeholder-muted/60 transition-all duration-150"
                   />
                 </div>
                 <div>
                   <label className="font-technical text-xs text-slate uppercase tracking-[0.05em] block mb-2">
-                    Destination Corridor / Node
+                    Delivery Point / Destination (City or Port)
                   </label>
                   <input
                     type="text"
                     required
                     value={formData.destination}
                     onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
-                    placeholder="e.g. Frankfurt DE (FRA)"
+                    placeholder="e.g. Hamburg DE (HAM) or Rotterdam"
                     className="w-full bg-canvas border border-hairline focus:border-form-focus focus:ring-2 focus:ring-form-focus/20 outline-none rounded-xs px-4 py-3 text-sm text-ink placeholder-muted/60 transition-all duration-150"
                   />
                 </div>
@@ -189,8 +189,8 @@ export default function ContactForm() {
                   >
                     <option value="ocean">Maritime / Ocean Cargo</option>
                     <option value="air">Expedited / Air Cargo</option>
-                    <option value="road">Corridor Road Freight</option>
-                    <option value="multimodal">Integrated Multi-modal</option>
+                    <option value="road">Inland Road Transport</option>
+                    <option value="multimodal">Integrated Multi-modal & Customs</option>
                   </select>
                 </div>
                 <div>
@@ -211,7 +211,7 @@ export default function ContactForm() {
               {/* Details Textarea */}
               <div>
                 <label className="font-technical text-xs text-slate uppercase tracking-[0.05em] block mb-2">
-                  Specialized Handling Manifest
+                  Additional Shipment Details (e.g., Cargo type, dimensions, customs assistance)
                 </label>
                 <textarea
                   rows={4}
@@ -229,7 +229,9 @@ export default function ContactForm() {
                   disabled={isSubmitting}
                   className="bg-primary hover:bg-cohere-black text-on-primary font-body text-sm font-medium py-4 px-8 rounded-full flex items-center gap-2 select-none shadow-sm transition-all duration-150 active:scale-95 disabled:opacity-50"
                 >
-                  {isSubmitting ? "Processing Telemetry..." : "Initiate Quote Manifest"}
+                  <span className="btn-radiative-text">
+                    {isSubmitting ? "Submitting Request..." : "Request Freight Quote"}
+                  </span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>

@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function AboutPage() {
   const timeline = [
-    { year: "2012", title: "Corridor Launch", desc: "Abhishek Logistics initialized domestic inland road networks with a dispatch fleet of 50 container transport vehicles." },
-    { year: "2016", title: "Maritime Integration", desc: "Launched ocean freight division, establishing custom clearance bonds and transit operations at Mumbai JNPT and Chennai Ports." },
-    { year: "2020", title: "Pharmaceutical Cold Chain", desc: "Deployed active-monitoring refrigerated warehousing nodes to secure cold-chain corridors for oncology and biologics cargo." },
-    { year: "2023", title: "Digital Command Center", desc: "Unveiled the GPS micro-tracking console API, giving clients complete satellite telemetry of cargo locations." },
-    { year: "2026", title: "Net-Zero Fleet Expansion", desc: "Achieved 100% electrified last-mile operations across primary metropolitan industrial grids." },
+    { year: "2012", title: "Company Founded", desc: "Abhishek Logistics initiated domestic container transport and road cargo services with a fleet of 50 heavy commercial vehicles." },
+    { year: "2016", title: "Ocean Freight Launch", desc: "Established our ocean freight division, setting up licensed customs brokerage and container operations at JNPT (Mumbai) and Chennai Ports." },
+    { year: "2020", title: "Cold Chain Warehousing", desc: "Commissioned temperature-controlled warehousing facilities to support pharmaceutical and chemical manufacturers in India." },
+    { year: "2023", title: "Pan-India Port Expansion", desc: "Expanded services across Gujarat (Mundra Port), West Bengal (Kolkata Port), and major Inland Container Depots (ICDs) in North India." },
+    { year: "2026", title: "Comprehensive EXIM Solutions", desc: "Integrated customs bonding, port logistics, and multi-modal freight transport under a unified corporate structure." },
   ];
 
   return (
@@ -21,14 +21,14 @@ export default function AboutPage() {
         <section className="py-24 border-b border-hairline relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <span className="font-technical text-sm font-normal text-coral tracking-[0.25em] uppercase block mb-6 select-none">
-              CORPORATE MANIFEST
+              ABOUT ABHISHEK LOGISTICS
             </span>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-[84px] font-normal leading-[0.95] tracking-[-0.035em] text-primary uppercase max-w-4xl mb-8">
-              The system for <br />
-              <span className="text-[#a1a1a6]">global movement.</span>
+              Reliable infrastructure for <br />
+              <span className="text-[#a1a1a6]">global trade.</span>
             </h1>
             <p className="font-body text-lg sm:text-xl text-body-muted max-w-2xl leading-[1.6]">
-              Abhishek Logistics designs, builds, and runs the infrastructure that coordinates international freight. We replace logistics friction with telemetry precision.
+              Abhishek Logistics is a premier B2B logistics partner for Indian manufacturing and export sectors, providing end-to-end freight forwarding, customs clearance, and inland transport.
             </p>
           </div>
         </section>
@@ -38,10 +38,10 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mb-16">
               <span className="font-technical text-xs text-coral-soft tracking-[0.2em] uppercase block mb-3">
-                OPERATIONAL VALUES
+                OUR CORE PHILOSOPHY
               </span>
               <h2 className="font-display text-3xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.02em]">
-                Logistics is a science of details.
+                Reliability and integrity in cargo transport.
               </h2>
             </div>
 
@@ -50,9 +50,9 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-coral-soft mb-6">
                   <Clock className="w-5 h-5" />
                 </div>
-                <h3 className="font-display text-2xl font-normal mb-3">Extreme Reliability</h3>
+                <h3 className="font-display text-2xl font-normal mb-3">Strict Reliability</h3>
                 <p className="text-sm text-white/70 leading-[1.5]">
-                  We schedule transit corridors with high-frequency intervals. Our dispatch networks run with 99.8% precision.
+                  We maintain strict schedules and follow through on commitments to keep your manufacturing supply chain running smoothly.
                 </p>
               </div>
 
@@ -60,9 +60,9 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-coral-soft mb-6">
                   <Globe className="w-5 h-5" />
                 </div>
-                <h3 className="font-display text-2xl font-normal mb-3">Network Depth</h3>
+                <h3 className="font-display text-2xl font-normal mb-3">Pan-India Network</h3>
                 <p className="text-sm text-white/70 leading-[1.5]">
-                  From air hubs to sea lanes and warehouse storage cells, our assets operate as an integrated global supply chain.
+                  Our network covers major Indian ports, airports, and inland depots, offering complete domestic and global connectivity.
                 </p>
               </div>
 
@@ -70,9 +70,9 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-coral-soft mb-6">
                   <Star className="w-5 h-5" />
                 </div>
-                <h3 className="font-display text-2xl font-normal mb-3">Absolute Security</h3>
+                <h3 className="font-display text-2xl font-normal mb-3">Total Safety</h3>
                 <p className="text-sm text-white/70 leading-[1.5]">
-                  Biometric clearances, active GPS tracking, and real-time alerts ensure complete chain of custody.
+                  We prioritize cargo safety through continuous vehicle tracking, customs clearance compliance, and secure port-bonded depots.
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
         <section className="py-24 bg-canvas">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-display text-3xl md:text-[40px] font-normal tracking-[-0.02em] text-primary mb-16">
-              Development Timeline
+              Milestone Timeline
             </h2>
             
             <div className="border-t border-hairline">
@@ -111,13 +111,13 @@ export default function AboutPage() {
               Partner with Abhishek Logistics
             </h3>
             <p className="text-sm text-body-muted mb-8 max-w-md mx-auto">
-              Learn how our global dispatch command center can synchronize your supply chain operations today.
+              Learn how our B2B cargo logistics and customs clearance services can optimize your export-import operations.
             </p>
             <Link
               href="/#quote"
               className="inline-flex items-center gap-2 bg-primary hover:bg-cohere-black text-on-primary font-body text-sm font-medium py-4 px-8 rounded-full shadow-sm transition-all duration-150 active:scale-95 group"
             >
-              Initiate Quote Manifest
+              <span className="btn-radiative-text">Request Freight Quote</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>

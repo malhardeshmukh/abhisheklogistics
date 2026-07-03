@@ -24,10 +24,10 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 pb-16 border-b border-white/10 mb-16">
           <div className="max-w-md">
             <span className="font-technical text-xs text-coral tracking-[0.2em] uppercase block mb-3">
-              LOGISTICS MOVES FAST
+              ABHISHEK LOGISTICS
             </span>
             <h3 className="font-display text-2xl md:text-3xl font-normal leading-[1.2] tracking-[-0.01em]">
-              Subscribe to global trade updates, capacity alerts, and route advisories.
+              Subscribe to global trade updates, custom regulations, and port congestion alerts.
             </h3>
           </div>
           
@@ -51,11 +51,11 @@ export default function Footer() {
             </form>
             {subscribed && (
               <span className="font-technical text-[10px] text-coral-soft mt-2 block animate-fade-in">
-                MANIFEST INDEXED. WELCOME.
+                SUBSCRIBED SUCCESSFULLY.
               </span>
             )}
             <p className="text-[11px] text-muted mt-3 leading-relaxed">
-              By subscribing, you agree to receive automated transit telemetry. Opt-out at any time.
+              Stay informed with our regular logistics briefs and trade lane updates. Opt-out at any time.
             </p>
           </div>
         </div>
@@ -71,22 +71,22 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
-                  Precision Road Freight
+                  Inland Road Freight
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
-                  Maritime Ocean Cargo
+                  Ocean Freight & Shipping
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
-                  Expedited Air Cargo
+                  Global Air Cargo
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
-                  Smart Warehousing Nodes
+                  Industrial Warehousing
                 </a>
               </li>
             </ul>
@@ -95,27 +95,27 @@ export default function Footer() {
           {/* Col 2 */}
           <div>
             <h4 className="font-technical text-xs font-bold text-white tracking-[0.1em] uppercase mb-6">
-              INTEGRATIONS
+              INDIAN PORT NETWORK
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="#tracking" className="text-sm text-muted hover:text-white transition-colors">
-                  Client Tracking Console
+                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                  Nhava Sheva (JNPT)
                 </a>
               </li>
               <li>
-                <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
-                  Corridor Route Telemetry
+                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                  Mundra Port
                 </a>
               </li>
               <li>
-                <a href="#quote" className="text-sm text-muted hover:text-white transition-colors">
-                  API & Webhook Web System
+                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                  Chennai Port
                 </a>
               </li>
               <li>
-                <a href="#quote" className="text-sm text-muted hover:text-white transition-colors">
-                  Enterprise ERP Sync
+                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                  Kolkata & Haldia Port
                 </a>
               </li>
             </ul>
@@ -124,27 +124,27 @@ export default function Footer() {
           {/* Col 3 */}
           <div>
             <h4 className="font-technical text-xs font-bold text-white tracking-[0.1em] uppercase mb-6">
-              NETWORK
+              EXIM SERVICES
             </h4>
             <ul className="space-y-4">
               <li>
                 <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
-                  Global Transit Map
+                  Customs Brokerage
                 </a>
               </li>
               <li>
                 <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
-                  Operational Hubs
+                  CFS Operations
                 </a>
               </li>
               <li>
                 <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
-                  Customs Port Guide
+                  Bonded Warehousing
                 </a>
               </li>
               <li>
                 <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
-                  Green Corridor Initiative
+                  Multi-modal Transport
                 </a>
               </li>
             </ul>
@@ -158,22 +158,22 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a href="#quote" className="text-sm text-muted hover:text-white transition-colors">
-                  Request Corridor Manifest
+                  Request Freight Quote
                 </a>
               </li>
               <li>
                 <a href="#login" className="text-sm text-muted hover:text-white transition-colors">
-                  Client Login Portal
+                  Client Portal
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-sm text-muted hover:text-white transition-colors">
-                  Operational Audits
+                <a href="/about" className="text-sm text-muted hover:text-white transition-colors">
+                  About Our Company
                 </a>
               </li>
               <li>
-                <a href="#careers" className="text-sm text-muted hover:text-white transition-colors">
-                  Join Dispatch Teams
+                <a href="#quote" className="text-sm text-muted hover:text-white transition-colors">
+                  Contact Support
                 </a>
               </li>
             </ul>
@@ -191,13 +191,13 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#privacy" className="hover:text-white transition-colors">Privacy Protocol</a>
-            <a href="#terms" className="hover:text-white transition-colors">Security Telemetry</a>
+            <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
             
             {/* Status indicator */}
             <div className="flex items-center gap-2 px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full font-technical text-[10px] uppercase">
               <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-              All Systems Nominal
+              Registered Customs Broker & Carrier
             </div>
           </div>
         </div>

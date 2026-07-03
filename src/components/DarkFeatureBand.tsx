@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, Cpu, Zap, Leaf } from "lucide-react";
+import { ShieldCheck, FileText, Warehouse } from "lucide-react";
 
 export default function DarkFeatureBand() {
   const containerVariants = {
@@ -38,15 +38,15 @@ export default function DarkFeatureBand() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 pb-12 border-b border-white/10">
             <div className="max-w-xl">
               <span className="font-technical text-xs text-coral-soft tracking-[0.2em] uppercase block mb-3">
-                COMMAND CENTER & INTEGRATION
+                LOGISTICS SECURITY & HANDLING
               </span>
               <h2 className="font-display text-3xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.02em]">
-                Engineered for cargo security, precision routing, and net-zero.
+                End-to-end security, seamless customs handling, and robust infrastructure.
               </h2>
             </div>
             <div className="max-w-xs">
               <p className="text-sm text-white/70 font-body leading-[1.5]">
-                We combine physical operations with advanced digital twin simulations to track and route global shipments with zero latency.
+                We streamline manufacturing supply chains with efficient route management, complete customs documentation, and bonded facilities.
               </p>
             </div>
           </div>
@@ -69,59 +69,59 @@ export default function DarkFeatureBand() {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <h3 className="font-display text-2xl font-normal mb-3">
-                  Secured Corridors
+                  Secure Cargo & Safety
                 </h3>
                 <p className="text-sm text-white/70 leading-[1.5]">
-                  Military-grade geolocation tracking combined with digital lock alerts ensures all cargo remains secure from pick-up to delivery.
+                  Continuous cargo safety monitoring and locked container transits protect your high-value manufacturing output from factory to port.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-white/5 flex items-baseline justify-between">
-                <span className="font-technical text-xs text-white/40">RISK MITIGATION</span>
-                <span className="font-technical text-sm font-bold text-coral-soft">100%</span>
+                <span className="font-technical text-xs text-white/40">CARGO SECURITY</span>
+                <span className="font-technical text-sm font-bold text-coral-soft">GUARANTEED</span>
               </div>
             </motion.div>
 
-            {/* Card 2: AI Dispatch */}
+            {/* Card 2: Customs Brokerage */}
             <motion.div
               variants={cardVariants}
               className="bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all duration-300 rounded-[16px] p-8 flex flex-col justify-between"
             >
               <div>
                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-coral-soft mb-6">
-                  <Cpu className="w-5 h-5" />
+                  <FileText className="w-5 h-5" />
                 </div>
                 <h3 className="font-display text-2xl font-normal mb-3">
-                  Autonomous Dispatch
+                  Expert Customs Brokerage
                 </h3>
                 <p className="text-sm text-white/70 leading-[1.5]">
-                  Algorithmic dispatch systems compute weather, customs delays, and carrier availability to reroute shipments in real-time.
+                  Dedicated customs documentation team at all major Indian ports ensures smooth clearing, tariff optimization, and regulatory compliance.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-white/5 flex items-baseline justify-between">
-                <span className="font-technical text-xs text-white/40">LATENCY REDUCTION</span>
-                <span className="font-technical text-sm font-bold text-coral-soft">-38%</span>
+                <span className="font-technical text-xs text-white/40">CUSTOMS CLEARANCE</span>
+                <span className="font-technical text-sm font-bold text-coral-soft">EFFICIENT</span>
               </div>
             </motion.div>
 
-            {/* Card 3: Sustainability */}
+            {/* Card 3: Warehousing */}
             <motion.div
               variants={cardVariants}
               className="bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all duration-300 rounded-[16px] p-8 flex flex-col justify-between"
             >
               <div>
                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-coral-soft mb-6">
-                  <Leaf className="w-5 h-5" />
+                  <Warehouse className="w-5 h-5" />
                 </div>
                 <h3 className="font-display text-2xl font-normal mb-3">
-                  Eco Corridor Offsets
+                  Strategic Warehouse Footprint
                 </h3>
                 <p className="text-sm text-white/70 leading-[1.5]">
-                  Automatic routing via electric heavy-freight and optimized sea channels helps companies reach net-zero carbon logistics goals.
+                  Warehousing solutions situated near industrial clusters and maritime ports to minimize double-handling and transport times.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-white/5 flex items-baseline justify-between">
-                <span className="font-technical text-xs text-white/40">CARBON DISPLACED</span>
-                <span className="font-technical text-sm font-bold text-coral-soft">420t CO2e</span>
+                <span className="font-technical text-xs text-white/40">METRO HUBS</span>
+                <span className="font-technical text-sm font-bold text-coral-soft">COVERED</span>
               </div>
             </motion.div>
           </motion.div>

@@ -15,9 +15,9 @@ export default function Navbar() {
       {/* Announcement Bar */}
       <div className="w-full bg-cohere-black text-on-dark h-[36px] flex items-center justify-between px-4 md:px-8 text-xs font-technical uppercase tracking-[0.02em] border-b border-white/10 select-none">
         <div className="flex-1 text-center flex items-center justify-center gap-2">
-          <span>Global transit network is operating at 99.8% precision.</span>
-          <a href="#tracking" className="underline hover:text-coral transition-colors flex items-center gap-1 font-sans capitalize tracking-normal">
-            Track Shipment <ArrowRight className="w-3 h-3" />
+          <span>Connecting Indian Manufacturers with Global Maritime and Air Trade Lanes.</span>
+          <a href="#services" className="underline hover:text-coral transition-colors flex items-center gap-1 font-sans capitalize tracking-normal">
+            Explore Services <ArrowRight className="w-3 h-3" />
           </a>
         </div>
       </div>
@@ -40,9 +40,6 @@ export default function Navbar() {
             <a href="#services" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               Services
             </a>
-            <a href="#tracking" className="text-sm font-medium text-ink hover:text-coral transition-colors">
-              Tracking Console
-            </a>
             <Link href="/about" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               About Us
             </Link>
@@ -63,7 +60,7 @@ export default function Navbar() {
               href="#quote"
               className="bg-primary text-on-primary text-sm font-medium hover:bg-cohere-black px-6 py-3 rounded-full transition-all duration-150 active:scale-95 shadow-sm"
             >
-              Request Quote
+              <span className="btn-radiative-text">Request Quote</span>
             </a>
           </div>
 
@@ -98,13 +95,6 @@ export default function Navbar() {
                 >
                   Services
                 </a>
-                <a
-                  href="#tracking"
-                  onClick={toggleMenu}
-                  className="block text-base font-medium text-ink hover:text-coral border-b border-hairline/50 pb-2"
-                >
-                  Tracking Console
-                </a>
                 <Link
                   href="/about"
                   onClick={toggleMenu}
@@ -132,7 +122,7 @@ export default function Navbar() {
                     onClick={toggleMenu}
                     className="w-full text-center py-3 text-sm font-medium text-on-primary bg-primary rounded-full hover:bg-cohere-black transition-colors"
                   >
-                    Request Quote
+                    <span className="btn-radiative-text">Request Quote</span>
                   </a>
                 </div>
               </div>
