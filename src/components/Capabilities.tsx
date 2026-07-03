@@ -74,8 +74,19 @@ const CAPABILITIES: Capability[] = [
 ];
 
 export default function Capabilities() {
-  // Play animation on mount for all SVGs
+  // Play animation on mount for all cards and SVGs
   useEffect(() => {
+    // 1. Entrance animation for the cards
+    animate(".capability-card", {
+      opacity: [0, 1],
+      translateY: [35, 0],
+      scale: [0.98, 1],
+      duration: 800,
+      delay: (el, i) => (i || 0) * 120,
+      ease: "outQuad",
+    });
+
+    // 2. Initial path drawing for SVGs
     animate(".capability-svg-path", {
       strokeDashoffset: [300, 0],
       duration: 1500,
@@ -84,11 +95,33 @@ export default function Capabilities() {
     });
   }, []);
 
-  const handleMouseEnter = (id: string) => {
-    // Re-animate path on hover
+  const handleCardMouseEnter = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
+    // Animate card lift, scale, shadow, and border color
+    animate(e.currentTarget, {
+      scale: 1.015,
+      translateY: -8,
+      boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02)",
+      borderColor: "#ff7759", // Highlight with coral accent color!
+      duration: 250,
+      ease: "outQuad",
+    });
+
+    // Animate path redraw
     animate(`.path-${id}`, {
       strokeDashoffset: [300, 0],
       duration: 1000,
+      ease: "outQuad",
+    });
+  };
+
+  const handleCardMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+    // Reset card layout and styling
+    animate(e.currentTarget, {
+      scale: 1.0,
+      translateY: 0,
+      boxShadow: "none",
+      borderColor: "#d9d9dd", // reset back to hairline border
+      duration: 250,
       ease: "outQuad",
     });
   };
@@ -112,8 +145,10 @@ export default function Capabilities() {
           {CAPABILITIES.map((cap) => (
             <div
               key={cap.id}
-              onMouseEnter={() => handleMouseEnter(cap.id)}
-              className="bg-canvas border-t-2 border-hairline hover:border-emerald-800 transition-all duration-300 pt-8 pb-10 flex flex-col justify-between group"
+              onMouseEnter={(e) => handleCardMouseEnter(e, cap.id)}
+              onMouseLeave={handleCardMouseLeave}
+              className="capability-card bg-canvas border-t-2 border-hairline pt-8 pb-10 flex flex-col justify-between group transition-shadow duration-300"
+              style={{ transformOrigin: "center bottom", opacity: 0 }}
             >
               <div>
                 {/* SVG Illustration Container */}

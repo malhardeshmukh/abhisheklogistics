@@ -54,12 +54,6 @@ export default function Navbar() {
           {/* Right Zone: CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="/#login"
-              className="text-sm font-medium text-ink hover:text-action-blue transition-colors px-3 py-2"
-            >
-              Client Login
-            </a>
-            <a
               href="/#quote"
               className="bg-primary text-on-primary text-sm font-medium hover:bg-cohere-black px-6 py-3 rounded-full transition-all duration-150 active:scale-95 shadow-sm"
             >
@@ -120,13 +114,6 @@ export default function Navbar() {
                   Request Quote
                 </a>
                 <div className="pt-4 flex flex-col space-y-3">
-                  <a
-                    href="/#login"
-                    onClick={toggleMenu}
-                    className="w-full text-center py-3 text-sm font-medium text-ink border border-hairline rounded-md hover:bg-soft-stone transition-colors"
-                  >
-                    Client Login
-                  </a>
                   <a
                     href="/#quote"
                     onClick={toggleMenu}

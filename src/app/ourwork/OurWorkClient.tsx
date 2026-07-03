@@ -231,18 +231,18 @@ export default function OurWorkClient() {
             href="/"
             className="inline-flex items-center gap-1.5 text-xs font-technical text-slate hover:text-primary transition-colors uppercase tracking-wider mb-8"
           >
-            <ArrowLeft className="w-3.5 h-3.5" /> Back to Dashboard
+            <ArrowLeft className="w-3.5 h-3.5" /> Back to Home
           </Link>
 
           <span className="font-technical text-xs text-coral tracking-[0.25em] uppercase block mb-4">
-            OPERATIONS LOGBOOK
+            OPERATIONAL LOGBOOK
           </span>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-[72px] font-normal leading-[1] tracking-[-0.03em] text-primary uppercase max-w-4xl mb-6">
             Supply Chain <br />
             <span className="text-muted">In Action.</span>
           </h1>
           <p className="font-body text-base sm:text-lg text-body-muted max-w-2xl leading-[1.6]">
-            Real-world operations log of Abhishek Logistics across Indian port networks, cross-dock warehouses, FTL freight corridors, and customs clearing terminals.
+            Real-world operations log of Abhishek Logistics across Indian port networks, bonded warehouses, inland road corridors, and customs clearing terminals.
           </p>
         </div>
       </section>
@@ -277,7 +277,7 @@ export default function OurWorkClient() {
           {filteredItems.length === 0 ? (
             <div className="py-24 text-center border border-dashed border-hairline rounded-[16px]">
               <span className="font-technical text-xs text-slate block mb-2">NO RECORDS FOUND</span>
-              <p className="text-sm font-body text-body-muted">No operations matching the selected filter currently exist in the database.</p>
+              <p className="text-sm font-body text-body-muted">No operations matching the selected filter currently exist in our portfolio.</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -321,19 +321,19 @@ export default function OurWorkClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="border-t border-hairline pt-6">
-              <span className="font-technical text-xs text-slate block mb-2">OPERATIONAL YARDS</span>
+              <span className="font-technical text-xs text-slate block mb-2">PORT GATEWAYS</span>
               <span className="font-display text-3xl font-normal text-primary">05 PORTS</span>
             </div>
             <div className="border-t border-hairline pt-6">
-              <span className="font-technical text-xs text-slate block mb-2">FTL CORRIDORS</span>
-              <span className="font-display text-3xl font-normal text-primary">12 ROUTING</span>
+              <span className="font-technical text-xs text-slate block mb-2">EXIM ROUTING</span>
+              <span className="font-display text-3xl font-normal text-primary">12 CORRIDORS</span>
             </div>
             <div className="border-t border-hairline pt-6">
-              <span className="font-technical text-xs text-slate block mb-2">WAREHOUSE NODES</span>
+              <span className="font-technical text-xs text-slate block mb-2">BONDED STORAGE</span>
               <span className="font-display text-3xl font-normal text-primary">145k SQ.FT</span>
             </div>
             <div className="border-t border-hairline pt-6">
-              <span className="font-technical text-xs text-slate block mb-2">EXIM RECORD COUNT</span>
+              <span className="font-technical text-xs text-slate block mb-2">CASE STUDIES</span>
               <span className="font-display text-3xl font-normal text-primary">15 PROJECTS</span>
             </div>
           </div>
@@ -344,14 +344,14 @@ export default function OurWorkClient() {
       <section className="py-24 bg-primary text-on-dark text-center border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4">
           <h3 className="font-display text-3xl sm:text-4xl font-normal text-white uppercase mb-6 tracking-tight">
-            Design Your Freight Matrix
+            Partner with Abhishek Logistics
           </h3>
           <p className="text-sm text-white/60 mb-10 max-w-md mx-auto leading-relaxed">
-            Configure custom routes, choose intermodal shipping modes, and set up customs clearance services with our operations desk.
+            Connect with our customs and logistics experts to design a reliable, end-to-end supply chain for your manufacturing cargo.
           </p>
           <Link
             href="/#quote"
-            className="inline-flex items-center gap-2 bg-white text-primary hover:bg-coral hover:text-white font-body text-sm font-semibold py-4 px-8 rounded-full shadow-md transition-all duration-150 active:scale-95 group"
+            className="inline-flex items-center gap-2 bg-primary text-white hover:bg-coral font-body text-sm font-semibold py-4 px-8 rounded-full shadow-md transition-all duration-150 active:scale-95 group"
           >
             <span className="tracking-wide">Deploy Supply Chain Quote</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
