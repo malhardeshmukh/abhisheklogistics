@@ -70,22 +70,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Inland Road Freight
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Ocean Freight & Shipping
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Global Air Cargo
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Industrial Warehousing
                 </a>
               </li>
@@ -99,22 +99,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Nhava Sheva (JNPT)
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Mundra Port
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Chennai Port
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#services" className="text-sm text-muted hover:text-white transition-colors">
                   Kolkata & Haldia Port
                 </a>
               </li>
@@ -128,22 +128,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#network" className="text-sm text-muted hover:text-white transition-colors">
                   Customs Brokerage
                 </a>
               </li>
               <li>
-                <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#network" className="text-sm text-muted hover:text-white transition-colors">
                   CFS Operations
                 </a>
               </li>
               <li>
-                <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#network" className="text-sm text-muted hover:text-white transition-colors">
                   Bonded Warehousing
                 </a>
               </li>
               <li>
-                <a href="#network" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#network" className="text-sm text-muted hover:text-white transition-colors">
                   Multi-modal Transport
                 </a>
               </li>
@@ -157,12 +157,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="#quote" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#quote" className="text-sm text-muted hover:text-white transition-colors">
                   Request Freight Quote
                 </a>
               </li>
               <li>
-                <a href="#login" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/ourwork" className="text-sm text-muted hover:text-white transition-colors">
+                  Our Work & Operations
+                </a>
+              </li>
+              <li>
+                <a href="/#login" className="text-sm text-muted hover:text-white transition-colors">
                   Client Portal
                 </a>
               </li>
@@ -172,7 +177,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#quote" className="text-sm text-muted hover:text-white transition-colors">
+                <a href="/#quote" className="text-sm text-muted hover:text-white transition-colors">
                   Contact Support
                 </a>
               </li>

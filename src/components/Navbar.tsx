@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="w-full bg-cohere-black text-on-dark h-[36px] flex items-center justify-between px-4 md:px-8 text-xs font-technical uppercase tracking-[0.02em] border-b border-white/10 select-none">
         <div className="flex-1 text-center flex items-center justify-center gap-2">
           <span>Connecting Indian Manufacturers with Global Maritime and Air Trade Lanes.</span>
-          <a href="#services" className="underline hover:text-coral transition-colors flex items-center gap-1 font-sans capitalize tracking-normal">
+          <a href="/#services" className="underline hover:text-coral transition-colors flex items-center gap-1 font-sans capitalize tracking-normal">
             Explore Services <ArrowRight className="w-3 h-3" />
           </a>
         </div>
@@ -37,13 +37,16 @@ export default function Navbar() {
 
           {/* Center Zone: Menu Links (Desktop) */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#services" className="text-sm font-medium text-ink hover:text-coral transition-colors">
+            <a href="/#services" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               Services
             </a>
+            <Link href="/ourwork" className="text-sm font-medium text-ink hover:text-coral transition-colors">
+              Our Work
+            </Link>
             <Link href="/about" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               About Us
             </Link>
-            <a href="#quote" className="text-sm font-medium text-ink hover:text-coral transition-colors">
+            <a href="/#quote" className="text-sm font-medium text-ink hover:text-coral transition-colors">
               Request Quote
             </a>
           </nav>
@@ -51,13 +54,13 @@ export default function Navbar() {
           {/* Right Zone: CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="#login"
+              href="/#login"
               className="text-sm font-medium text-ink hover:text-action-blue transition-colors px-3 py-2"
             >
               Client Login
             </a>
             <a
-              href="#quote"
+              href="/#quote"
               className="bg-primary text-on-primary text-sm font-medium hover:bg-cohere-black px-6 py-3 rounded-full transition-all duration-150 active:scale-95 shadow-sm"
             >
               <span className="btn-radiative-text">Request Quote</span>
@@ -89,12 +92,19 @@ export default function Navbar() {
             >
               <div className="px-4 pt-2 pb-6 space-y-4">
                 <a
-                  href="#services"
+                  href="/#services"
                   onClick={toggleMenu}
                   className="block text-base font-medium text-ink hover:text-coral border-b border-hairline/50 pb-2"
                 >
                   Services
                 </a>
+                <Link
+                  href="/ourwork"
+                  onClick={toggleMenu}
+                  className="block text-base font-medium text-ink hover:text-coral border-b border-hairline/50 pb-2"
+                >
+                  Our Work
+                </Link>
                 <Link
                   href="/about"
                   onClick={toggleMenu}
@@ -103,7 +113,7 @@ export default function Navbar() {
                   About Us
                 </Link>
                 <a
-                  href="#quote"
+                  href="/#quote"
                   onClick={toggleMenu}
                   className="block text-base font-medium text-ink hover:text-coral border-b border-hairline/50 pb-2"
                 >
@@ -111,14 +121,14 @@ export default function Navbar() {
                 </a>
                 <div className="pt-4 flex flex-col space-y-3">
                   <a
-                    href="#login"
+                    href="/#login"
                     onClick={toggleMenu}
                     className="w-full text-center py-3 text-sm font-medium text-ink border border-hairline rounded-md hover:bg-soft-stone transition-colors"
                   >
                     Client Login
                   </a>
                   <a
-                    href="#quote"
+                    href="/#quote"
                     onClick={toggleMenu}
                     className="w-full text-center py-3 text-sm font-medium text-on-primary bg-primary rounded-full hover:bg-cohere-black transition-colors"
                   >
