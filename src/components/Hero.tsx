@@ -107,9 +107,13 @@ export default function Hero() {
                 <p className="text-xs text-body-muted leading-[1.5] mb-4">
                   Dedicated customs-bonded logistics linking major industrial corridors and production hubs directly with critical sea lanes.
                 </p>
-                <div className="flex items-center justify-between">
-                  <span className="font-technical text-[10px] text-slate">COMPLIANCE: 100%</span>
-                  <span className="font-technical text-[10px] text-coral font-bold uppercase">CARGO ASSURED</span>
+                <div 
+                  onDoubleClick={() => window.dispatchEvent(new CustomEvent("open-logistics-console"))}
+                  title="Double-click to initialize Control Console"
+                  className="flex items-center justify-between cursor-pointer select-none group/badge"
+                >
+                  <span className="font-technical text-[10px] text-slate group-hover/badge:text-primary transition-colors">COMPLIANCE: 100%</span>
+                  <span className="font-technical text-[10px] text-coral font-bold uppercase group-hover/badge:underline decoration-1 underline-offset-2">CARGO ASSURED</span>
                 </div>
               </div>
             </div>

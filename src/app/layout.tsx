@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, Space_Mono } from "next/font/google";
 import "./globals.css";
+import CommandCenterEasterEgg from "@/components/CommandCenterEasterEgg";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-canvas text-ink font-body">
         {children}
+        <CommandCenterEasterEgg />
       </body>
     </html>
   );
